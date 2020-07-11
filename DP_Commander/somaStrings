@@ -1,0 +1,26 @@
+<dp:do-action>
+	<CreateDir>
+		<Dir>{}</Dir>
+	</CreateDir>
+</dp:do-action>
+
+<dp:do-action>
+	<RemoveDir>
+		<Dir>{}</Dir>
+	</RemoveDir>
+</dp:do-action>
+
+<dp:set-file name="{}">{}</dp:set-file>
+
+<dp:do-action>
+	<DeleteFile>
+		<File>{}</File>
+	</DeleteFile>
+</dp:do-action>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+	<env:Body>
+		<dp:request domain="default" xmlns:dp="http://www.datapower.com/schemas/management">do-action</dp:request>
+	</env:Body>
+</env:Envelope>
